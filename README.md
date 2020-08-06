@@ -11,7 +11,7 @@ Check config-vid-yml branch.
 
 # how to add a new yml
 Simple add a new yml file in https://github.com/iusverma/s-config project. Url for this new added yml will be
-  http://localhost:8080/<yml-name>/default
+  http://localhost:8080/yml-name/default
 
   Example: if you add a new yml with name sample.yml
   Uri will be http://localhost:8080/sample/default
