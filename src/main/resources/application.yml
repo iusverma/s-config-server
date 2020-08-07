@@ -1,6 +1,17 @@
+# With GIT Config
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/iusverma/s-config
+
+# With local files
 spring:
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/iusverma/s-config
+        native:
+          searchLocation: classpath:/config
+  profiles:
+    active: native
