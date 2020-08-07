@@ -15,3 +15,6 @@ Simple add a new yml file in https://github.com/iusverma/s-config project. Url f
 
   Example: if you add a new yml with name sample.yml
   Uri will be http://localhost:8080/sample/default
+
+# URL for native profile
+  http://localhost:8080/person/native
