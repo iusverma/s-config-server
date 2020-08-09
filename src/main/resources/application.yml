@@ -1,17 +1,19 @@
-# With GIT Config
-#spring:
-#  cloud:
-#    config:
-#      server:
-#        git:
-#          uri: https://github.com/iusverma/s-config
+server.port: 8080
 
-# With local files
+# With GIT Config
 spring:
   cloud:
     config:
       server:
-        native:
-          searchLocation: classpath:/config
-  profiles:
-    active: native
+        git:
+          uri: https://github.com/iusverma/s-config
+
+# With local files
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          searchLocation: classpath:/config
+#  profiles:
+#    active: native
