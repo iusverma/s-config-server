@@ -7,6 +7,10 @@ spring:
       server:
         git:
           uri: https://github.com/iusverma/s-config
+        native:
+          searchLocation: classpath:/config
+  profiles:
+    active: native,default
 
 # With local files
 #spring:
