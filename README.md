@@ -1,20 +1,5 @@
-# s-config-server
-Clone https://github.com/iusverma/s-config with this project and update the path in application.properties to run this project.
+Purpose: I tried to use multiple profile to see, if we can search for config in local as well as git repo as the same time. 
 
-# latest code
-Check config-vid-yml branch.
+Result: No matter what we try, native always overrides default profile. Plus if there is any other profile last profile in the line will override every thing.
 
-# sample uris
-- http://localhost:8080/application/default
-- http://localhost:8080/product/default
-- http://localhost:8080/address/default
-
-# how to add a new yml
-Simple add a new yml file in https://github.com/iusverma/s-config project. Url for this new added yml will be
-  http://localhost:8080/yml-name/default
-
-  Example: if you add a new yml with name sample.yml
-  Uri will be http://localhost:8080/sample/default
-
-# URL for native profile
-  http://localhost:8080/person/native
+Example: spring.profiles.active: native,dev,uat -> Then only uat profile will be applicable and active.
