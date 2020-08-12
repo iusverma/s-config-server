@@ -9,6 +9,9 @@ Check config-vid-yml branch.
 - http://localhost:8080/product/default
 - http://localhost:8080/address/default
 
+if running with native profile
+- http://localhost:8080/person/native
+
 # how to add a new yml
 Simple add a new yml file in https://github.com/iusverma/s-config project. Url for this new added yml will be
   http://localhost:8080/yml-name/default
